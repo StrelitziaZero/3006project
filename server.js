@@ -46,7 +46,7 @@ var nwt=require('nodejs-websocket');
               var mydb =  [
                   { 
                     name: conn.rename,
-                    time: data.time, 
+                    time: data.time1, 
                     text: data.text 
                  }
                  ];
