@@ -8,8 +8,7 @@ var nwt=require('nodejs-websocket');
    //Used to process the message sent by the receiving client's click
    conn.on('text',function(str){
      console.log(str);
-
-     // var data = JSON.parse(str);    
+var data = JSON.parse(str);    
       switch(data.type){
         case 'setname':
           conn.rename=data.name;
