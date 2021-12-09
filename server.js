@@ -9,7 +9,7 @@ var nwt=require('nodejs-websocket');
    conn.on('text',function(str){
      console.log(str);
 
-      var data = JSON.parse(str);    
+     // var data = JSON.parse(str);    
       switch(data.type){
         case 'setname':
           conn.rename=data.name;
@@ -46,7 +46,7 @@ var nwt=require('nodejs-websocket');
               var mydb =  [
                   { 
                     name: conn.rename,
-                    time: data.time1, 
+                    time: data.time, 
                     text: data.text 
                  }
                  ];
